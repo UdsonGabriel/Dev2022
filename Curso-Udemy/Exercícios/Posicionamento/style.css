@@ -1,0 +1,79 @@
+.conteiner {
+    width: 800px;
+    
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px 5px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: rgb(33, 129, 92);
+    margin: 0;
+    
+}
+
+
+
+.conteiner p {
+    width: 300px;
+    /* border: 5px solid #10004b; */
+    padding: 10px;
+    border-bottom: 5px solid #10004b;
+    }
+
+.relative {
+    border: 1px solid #bababa;
+    position: relative;
+    left: 50px;
+}
+/* postion: static é o padrão que ja vem no html */
+/*  o position: relative, ele movimenta o item de acordo com seu ponto de partida */
+
+.absolute {
+    position: absolute;
+    color: #ffffff;
+    background: #10004b;
+    left: 200px;
+    padding: 10px;
+    bottom: 5px;
+    margin: 0 0 3px 0;
+    
+    text-align: center;
+       
+}
+
+.content-absolute p{
+    width: 200px;
+    font-size: 12px;
+}
+/* vale lembrar que o valor absolute, ele pode sobrepor os outros elementos */
+/*  o position: absolute, ele posiciona o elemento de acordo COM O ELEMENTO PAI,  se o elemento pai nao tiver um position relative, ele irá se baser pelo body */
+/* pra colocar dentro da div, tem que colocar relative dentro do elemento pai */
+/* Um elemento com position: absolute;é posicionado em relação ao ancestral posicionado mais próximo (em vez de posicionado em relação à janela de visualização, como fixo).
+No entanto; se um elemento posicionado absoluto não tiver ancestrais posicionados, ele usará o corpo do documento e se moverá junto com a rolagem da página. */
+
+
+
+/* fixed */
+.conteiner2 {
+    border: 5px solid #10004b;
+    width: 150px;
+    border-radius: 20px;
+    text-align: center;
+    background: #fff;
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    background-image: url();
+
+}
+/* m elemento com position: fixed;é posicionado em relação à janela de visualização, o que significa que ele sempre permanece no mesmo lugar, mesmo que a página seja rolada. As propriedades top, right, bottom e left são usadas para posicionar o elemento.
+Um elemento fixo não deixa uma lacuna na página onde normalmente estaria localizado. */

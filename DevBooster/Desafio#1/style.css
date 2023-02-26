@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2? family= Exo+2:wght@300;700 & family= Inter & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 100%;
+}
+
+body {
+    background: #f4f5fc;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+header nav {
+    margin-top: 29px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .svgs {
+    display: flex;
+    align-items: center;
+    gap: 2px;   
+    cursor: pointer; 
+}
+
+nav .svgs #logo-svg {
+    margin: 0px 4px 0px 0px;
+}
+nav .svgs #ponto {
+    position: relative;
+    top: 3px;
+    right: 2px;
+}
+
+nav .nav-top {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    align-items: center;
+}
+
+nav .nav-top a {
+    text-decoration: none;
+    color: #000;
+}
+nav .nav-top button {
+    width: 160px;
+    height: 44px;
+    background: #F1554C;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav .nav-top button:hover {
+    background: #F1554C;
+    box-shadow: 0 0 20px #F1554C;
+}
+
+main {
+    max-width: 1150px;
+    margin: 0 auto;  
+    height: 500px;
+    position: relative;
+    
+}
+
+.text-main {
+    width: 385px;
+    height: 350px;
+    position: relative;
+    top: 30px;
+}
+
+.text-main h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    color: #414246;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+    height: 40px;
+}
+.text-main h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 43px;
+    color: #393D51;
+    line-height: 53px;
+}
+
+.text-main h1 span {
+    color:#F1554C;
+}
+
+.text-main p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    top: 12px;
+    color: #393D51;
+    letter-spacing: 0.5px;
+}
+
+.text-main .buttons {
+    position: relative;
+    top: 35px; 
+    display: flex;
+    align-items: center;
+    
+}
+
+.text-main .buttons #button-1 {
+    width: 150px;
+    height: 44px;
+    background: #F1554C;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.buttons #button-2 {
+    border: none;
+    background: transparent;
+    color: #393D51;
+    display: flex;
+    width: 155px;
+    height: 44px;
+    font-size: 14px;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    left: 10%;
+    border-radius: 7px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttons #button-1:hover {
+    background: #F1554C;
+    box-shadow: 0 0 20px #F1554C;
+}
+
+.buttons #button-2:hover {
+    background: #f8f8f8;
+    box-shadow: 0 0 20px #393D51;
+}
+
+.text-main .buttons #button-2 svg {
+    width: 30px;
+}
+
+.mid-main {
+    position: absolute;
+    right: 128px;
+    top:0px;
+    z-index: 5;
+}
+
+.back-main {
+    width: 348px;
+    height: 428px;
+    background: #F1554C;
+    border-radius: 22px;
+    position: absolute;
+    top: 25px;
+    right: 155px;
+    z-index: 2;
+}
+
+.waves-main {
+    position: absolute;
+    top: 292px;
+    right: 330px;
+    z-index: 1;
+}
+.waves {
+    display: flex;
+    flex-direction: column;
+    width: 321px;
+    gap: 7px;
+}
+
+.challenge {
+    background: #fff;
+    width: 216px;
+    height: 67px;
+    position: absolute;
+    top: 105px;
+    right: 418px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    z-index: 8;
+    box-shadow: 0px 6px 26px rgba(0, 0, 0, 0.03);
+}
+
+.challenge h1 {
+    font-family: 'Exo 2', sans-serif;
+    color: #393D51;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+.challenge p {
+    color: #414246;
+    font-size: 13px;
+}

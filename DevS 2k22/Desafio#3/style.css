@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 100%;
+}
+
+body {
+    color: #1A202C;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.content {
+    display: flex;
+}
+
+.side {
+    width: 50%;
+    height: 100vh;
+    background: #F7FAFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form .forms h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    
+    
+
+
+}
+
+.form .forms h1 {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+
+form h5 {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+
+form .input-login input {
+    font-family: 'Lato';
+    width: 290px;
+    height: 45px;
+    padding: 15px;
+    margin-bottom: 18px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form .options {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+form .options .remember-password {
+    gap: 5px;
+    display: flex;
+    margin-bottom: 18px;
+}
+
+form .options .remember-password input {
+    cursor: pointer;
+    accent-color: #04C35C;
+}
+
+a {
+    text-decoration: none;
+    color: #2B6CB0;
+}
+
+form button {
+    width: 290px;
+    height: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+form #enter{
+    background: #04C35C;
+    box-shadow: 0 0 20px;
+}
+
+form #enter:hover {
+    box-shadow: 0 0 10px #04C35C;
+}
+
+form #login-google {
+    background: #1A202C;
+    gap: 5px;
+    margin-bottom: 100px;
+}
+
+form #login-google:hover {
+    box-shadow: 0 0 10px #1A202C;
+}
+
+.form h4 {
+    text-align: center;
+    font-family: 'Lato' sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1A202C;
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        right: 0px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #fff;
+        
+    }
+
+}

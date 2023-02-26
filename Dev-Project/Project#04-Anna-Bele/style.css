@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* reseting css rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #d2d2c1 url('imagens/fundo.png');
+    
+}
+
+.conteiner {
+    width: 900px;
+    margin: 0 auto;
+}
+.img-capa {
+    display: flex;
+    justify-content: center;
+    padding: 2px 15px 0px  15px;
+
+}
+
+.img-capa img {
+    /* box-shadow: 1px 0px 10px 0px #fff; */
+    /* border-radius: 20px; */
+    border: 1px solid #b4b4b4;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* margin-left: 162px;
+    margin-right: 162px; */
+    background-color: rgb(199, 194, 168);
+    border: 1px solid #b4b4b4;
+    /* border-radius: 15px; */
+}
+
+nav a{
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    color: #3f3f4d;
+}
+
+nav a h3 {
+    
+    font-weight: bolder;
+    margin-right: 10px;
+}
+nav a h3:hover {
+    color: #867979;
+} 
+
+
+.text {
+    border: 1px solid #b4b4b4;
+    background:rgb(245, 241, 224);
+    /* margin: 0px 162px 8px 162px ; */
+    padding: 10px;
+    
+}
+.text p {
+    text-align: center;
+    font-size: 15px;
+}
+.text .contato p{
+    text-align: left;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.text h3 {
+    color: rgb(133, 125, 90);
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.text .img-publi  {
+   display: flex;
+   justify-content: center;
+  
+}
+
+.text .img-publi img {
+    border-radius: 10px;
+    border: 5px solid #cacaca;
+}

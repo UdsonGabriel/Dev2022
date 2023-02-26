@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* Reset style sheets css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--gray-headline);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  /* Primary Colors */
+  --brand-green: #00856f;
+  --brand-green-light: #dce9e2;
+  --brand-green-light-02: #f7f9f9;
+  --brand-beige: #fffaf1;
+  --brand-green-hover: #00453a;
+
+  /* Secondary Colors */
+  --gray-headline: #212529;
+  --gray-paragraph: #495057;
+  --white: #fff;
+
+  --nav-height: 7.2rem;
+
+  font-size: 62.5%;
+}
+
+/* Mobile Fist __________________________________________________________// */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans';
+  font-size: 1.6rem;
+  text-align: center;
+  overflow: overlay;
+  position: relative;
+  background: var(--brand-green-light-02);
+}
+
+/* Navigation ______________________________________________________//*/
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 200;
+}
+
+nav .position-nav {
+  height: 7.2rem;
+  width: 37.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 2.4rem;
+}
+
+/* NAV Scroll ______________________________________________________//*/
+
+nav.scroll {
+  background: var(--brand-green);
+  width: 100vw;
+  position: sticky;
+  top: 0;
+}
+
+nav.scroll .logo path {
+  fill: white;
+}
+
+nav.scroll button path {
+  stroke: var(--white);
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Main section 1 __________________________________________________________// */
+
+.wrapper {
+  width: 32.7rem;
+  margin-inline: auto;
+
+  /* padding-top: calc(4.1rem +(--nav-height)); */
+}
+
+.hero {
+  padding-top: calc(4.1rem + (--nav-height));
+}
+
+.hero::before {
+  content: '';
+  width: 100vw;
+  height: calc(110rem + var(--nav-height));
+  background-color: var(--brand-green-light);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero h4 {
+  color: var(--brand-green);
+  font-size: 1.4rem;
+  /* letter-spacing: 0.08em; */
+  letter-spacing: 1.1px;
+  text-align: center;
+  padding: 4.1rem 0rem 1.6rem 0rem;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 4.4rem;
+  color: var(--gray-headline);
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
+.hero p {
+  font-size: 1.8rem;
+  color: var(--gray-paragraph);
+  font-weight: 400;
+  line-height: 2.7rem;
+  text-align: center;
+  padding-bottom: 3.2rem;
+}
+
+.hero button {
+  width: 26.3rem;
+  height: 5.3rem;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--brand-green);
+  margin: 0.5rem auto;
+  margin-bottom: 3rem;
+  /* ou
+  margin: 3px auto; */
+}
+
+.hero img {
+  width: 26.4rem;
+  display: block;
+  margin: 0 auto;
+  object-position: 0 2rem;
+}
+
+.stats {
+  height: 60rem;
+  padding-block: 4rem;
+  margin: 0 auto;
+  background: var(--brand-beige);
+  border: 0.1rem solid var(--brand-green-light);
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.stat h3 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--gray-headline);
+  line-height: 130%;
+  margin-bottom: 0.4rem;
+}
+
+.stat p {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--brand-green);
+  line-height: 150%;
+}
+
+/* Navigation - Menu ______________________________________________________//*/
+
+body.menu-expanded {
+  overflow: hidden;
+}
+
+body.menu-expanded > :not(nav) {
+  visibility: hidden;
+}
+
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu {
+  transform: translateY(100%);
+}
+
+body.menu-expanded .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--brand-green);
+  width: 100vw;
+  height: 100vh;
+  padding-top: var(--nav-height);
+  transition: transform 300ms;
+  transform: translateY(0);
+}
+
+/* body.menu-expanded nav {
+  position: sticky;
+  top: 0;
+} */
+
+.menu ul:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  margin-top: 6rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+}
+
+.menu ul a {
+  color: var(--brand-beige);
+}
+
+.menu .button {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  color: var(--brand-green);
+  background: var(--white);
+  border-radius: 4rem;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  margin-top: 4.8rem;
+  margin-bottom: 8rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded nav button {
+  position: relative;
+  z-index: 100;
+}
+
+body.menu-expanded .logo path {
+  fill: white;
+}
+
+body.menu-expanded button path {
+  stroke: white;
+}
+
+/* Section Services ______________________________________________________//*/
+
+.services {
+  padding: 10.4rem 0rem 10rem 0rem;
+}
+
+.services header {
+  margin-bottom: 6rem;
+}
+
+.services header h4 {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  color: var(--brand-green);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.services header h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.9rem;
+  color: var(--gray-headline);
+  margin-bottom: 6rem;
+}
+
+.services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.services .cards h3 {
+  font-size: 2.3rem;
+  line-height: 3.1rem;
+  color: var(--gray-headline);
+}
+
+.services .cards p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--gray-paragraph);
+}
+
+.services .card {
+  background: var(--white);
+  outline: 0.1rem solid var(--brand-green-light);
+  outline-offset: -0.1rem;
+  border-radius: 0.6rem;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1.6rem;
+}

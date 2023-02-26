@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@500;600;700 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    background: #f4f5fc;
+    position: relative;
+}
+
+header {
+    height: 150px;
+    background: linear-gradient(#251966, #8072cc, #f4f5fc);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+    font-size: 40px;
+    padding: 25px;
+}
+
+.white {
+    color: #fff;
+}
+
+header nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav a:hover {
+    color: #3f3e3e;
+}
+
+main {
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+main .content {
+    width: 670px;
+    background: #e1def3;
+}
+
+main .content .posts {
+    padding: 15px;
+}
+
+main .content .posts .text {
+    padding: 10px 0px 10px 0px;
+}
+
+main .content .posts .text p {
+    opacity: 0.7;
+    padding: 0px;
+}
+
+main .content .posts h1 {
+    font-size: 20px;
+}
+
+main .content .posts p {
+    padding: 8px 0px 0px 0px;
+}
+
+main .content .posts a {
+    color: #8072cc;
+    text-decoration: none;
+}
+aside {
+    width: 250px;
+    position: absolute;
+    top: 200px;
+    right: 150px;
+}
+hr {
+    width: 200px;
+}
+
+aside .cards a {
+    color: #8072cc;
+    text-decoration: none;
+}
+
+aside .cards {
+    margin-bottom: 50px;
+}
+aside .cards h1 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    background: #c5bdf1;
+    width: 200px;
+    padding: 5px;
+}
+
+aside .cards p {
+    margin: 3px 0px 5px 0px;
+}
+
+aside .cards .link {
+    display: flex;
+    flex-direction: column;
+}
+
+aside .cards .link a {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(#8072cc, #251966 );
+    color: #f4f5fc;
+    padding: 5px;
+    font-size: 14px;
+    
+}
+

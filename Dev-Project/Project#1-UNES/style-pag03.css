@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-left: 225px;
+    margin-right: 220px;
+    background-color: #111111;
+    color: #B4B4B4;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+header{
+    display: flex;
+}
+
+nav{
+    margin-left: 460px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.img-logo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ 
+.link-style a{
+    color: #B6B7F6;
+    text-decoration: none;
+}
+.link-style a:hover{
+    color: #9193f8;
+    text-decoration: none;
+}
+form{
+    margin-top: 15px;
+    
+}
+footer{
+    margin-top: 190px;
+    text-align: center;
+}
+
+button{
+    width: 100px;
+    margin-top: 10px;
+}
+ 
+h3{
+    margin-top: 15px;
+}
+
+.rd-sociais img{
+    width: 40px;
+    margin-top: 20px;
+}
+textarea{
+    width: 900px;
+}

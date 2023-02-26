@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
+body {
+    background: #2A2A2A;
+}
+
+header {
+    width: 100%;
+    min-width: 300px;
+    height: 250px;
+    background: #005959;
+}
+
+
+.content {
+    width: 85%;
+    max-width: 900px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 41px 0;
+    
+    
+}
+
+.brand-blog {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.brand-blog h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: #fff;
+}
+
+.brand-blog h2{
+    font-family: 'Lexend Deca', sans-serif;
+    color: #fff;
+}
+
+
+
+.input-search {
+    max-width: 900px;
+    min-width: 300px;
+    display: flex;
+    position: relative;
+    top: 85px;
+    align-items: center;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+}
+    
+
+.input-search input {
+    max-width: 850px;
+    min-width: 300px;
+    padding: 0px 0px 0px 15px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+::placeholder {
+   color:#fff;
+   opacity: 0.5;
+   max-width: 100%;
+}
+main {
+    width: 100%;
+    min-width: 300px;
+}
+
+.cards {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 900px;
+    min-width: 300px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.card-1 {
+    background: #005959;
+    border-radius: 5px;
+    padding: 10px ;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #F0F0F0;
+    font-family: 'Lexend Deca';  
+    font-size: 16px;  
+}
+
+.card-top p{
+    opacity: 0.8;}
+ 
+.card-title {
+    padding: 0px 0px 0px 10px;
+    font-family: 'Lexend Deca';
+    font-size: 26px;
+    color: #fff;
+}
+
+.card-text {
+    padding: 10px;
+    color:#F0F0F0;
+    font-family: 'Lexend Deca';
+    font-size: 18px;
+}
+
+.card-2 {
+    background: #005959;
+    border-radius: 5px;
+    padding: 10px ;
+    margin-top: 25px;
+}
+
+.card-3 {
+    background: #005959;
+    border-radius: 5px;
+    padding: 10px ;
+    margin-top: 25px;
+}
+
+.card-4 {
+    background: #005959;
+    border-radius: 5px;
+    padding: 10px ;
+    margin-top: 25px;
+}
+
+.card-5 {
+    background: #005959;
+    border-radius: 5px;
+    padding: 10px ;
+    margin-top: 25px;
+}
+
+a {
+    text-decoration: none;
+}

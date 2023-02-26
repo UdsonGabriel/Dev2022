@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(9, 9, 39);
+    color: white;
+    font-family: helvetica;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.style-table{
+    background-color: white;
+    color: black;
+    width: 600px;
+    height: 70px;
+    margin: auto;
+    text-align: center;
+
+}
+.position-table{
+    padding: 2em;
+
+}
+.td-aluno{
+    height: 40px;
+}

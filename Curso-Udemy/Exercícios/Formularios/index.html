@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="processar-dados.php">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="user">Usuário: </label>
+            <input type="text" placeholder="Digite seu usuário" id="user" name="username">
+            <label for="pass">Senha: </label>
+            <input type="password" placeholder="Digite sua senha" id="pass" name="password">
+            <button>Entrar</button>
+        </fieldset>
+    </form>
+    <h1>Estado</h1>
+    <select name="Estado">
+        <option value="ma">MA</option>
+        <option value="rj">RJ</option>
+        <option value="sp">SP</option>
+        <option value="ce">CE</option>
+        <option value="ba">BA</option>
+    </select>
+</body>
+</html>

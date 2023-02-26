@@ -1,0 +1,423 @@
+/* font importing */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* reseting css rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background: #131921;  
+}
+
+
+nav {
+    height: 60%;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+
+.brand {
+    padding: 8px;
+    border: 1px solid transparent;
+}
+
+.brand:hover {
+    border: 1px solid #fff;
+}
+
+.brand a {
+    display: flex;
+    text-decoration: none;
+    gap: 1px;
+}
+
+.brand img {
+    width: 95px;
+}
+
+.brand p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.search img {
+    width: 20px;
+}
+
+.address {
+    border: 1px solid transparent;
+    padding: 8px;
+}
+
+.address:hover {
+    border: 1px solid #fff;
+}
+
+.address a{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    gap: 2px;
+}
+
+.address h3 {
+    font-size: 14px;
+}
+
+.address p {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.address img {
+    width: 20px;
+    position: relative;
+    margin-top: 6px;
+}
+
+.search {
+    display: flex;
+    padding: 4px;
+}
+
+.search select {
+    height: 40px;
+    width: 100px;
+    display: flex;
+    border-radius: 5px 0px 0px 5px ;
+    border: 1px solid #ccc;
+    background: #DADADA;
+    cursor: pointer;
+}
+
+.search input {
+    width: 500px;
+    height: 40px;
+    border: transparent;
+    padding: 9px;
+}
+
+.search button {
+    height: 40px;
+    border: transparent;
+    width: 50px;
+    background-color: #fa991b;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #ffba60;
+}
+
+.login-list {
+    border: 1px solid transparent;
+    padding: 8px;  
+}
+
+.login-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-list:hover {
+    border: 1px solid #fff;
+}
+
+.login-list p {
+    font-size: 12px;
+
+}
+
+.login-list h3 {
+    font-size: 14px;
+    
+}
+ 
+.order-returns {
+    border: 1px solid transparent;
+    padding: 8px;
+    cursor: pointer;
+}   
+
+.order-returns a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.order-returns:hover {
+    border: 1px solid #fff;
+}
+
+.order-returns p {
+    font-size: 12px;
+}
+
+.order-returns h3 {
+    font-size: 14px;
+}
+
+.cart {
+    border: 1px solid transparent;
+}
+
+.cart:hover {
+    border: 1px solid #fff;
+}
+
+.cart a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.cart a img {
+    width: 40px;
+}
+
+.cart a h3 {
+    margin-top: 15px;
+}
+
+/* Nav-main */
+
+.nav-main .content {
+    background: #242F41;
+    display: flex;
+    width: 100%;
+    height: 39px;
+    justify-content: space-around;
+}
+
+.nav-main .menu {
+    border: 1px solid transparent;
+    margin: 5px 0 5px 0;
+    padding: 4px;
+}
+
+.nav-main .menu:hover {
+    border: 1px solid #fff;
+}
+
+.nav-main .menu a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    gap: 3px;
+    /* gap especificar o tamanho do espaço entre os elementos */
+    align-items: center;
+} 
+
+.nav-main .menu img {
+    width: 20px;
+}
+
+.nav-main .menu h3 {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Venda na Amazon */
+
+.nav-main .amazon-sales {
+    border: 1px solid transparent;
+    margin: 5px 0 5px 0;
+    padding: 6px;
+}
+
+.nav-main .amazon-sales:hover {
+    border: 1px solid #fff;
+}
+
+.amazon-sales a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+.amazon-sales h3 {
+    font-size: 14px;
+    align-items: center;
+    font-weight: normal;
+}
+
+/* Mais Vendidos */
+
+.best-sellers {
+    border: 1px solid transparent;
+    margin: 5px 0 5px 0;
+    padding: 6px;
+}
+
+.best-sellers:hover {
+    border: 1px solid #fff;
+}
+
+.best-sellers a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.best-sellers h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Amazon Outlet */
+
+.amazon-outlet {
+    border: 1px solid transparent;
+    margin: 5px 0 5px 0;
+    padding: 6px;
+}
+
+.amazon-outlet:hover {
+    border: 1px solid #fff;
+}
+
+.amazon-outlet a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.amazon-outlet h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Prime */
+
+.prime {
+    border: 1px solid transparent;
+    margin: 5px 0 5px 0;
+    padding: 6px;
+}
+
+.prime:hover {
+    border: 1px solid #fff;
+}
+
+.prime a {
+    text-decoration: none;
+    color: #fff
+}
+
+.prime h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Ofertas */
+
+.offer {
+    border: 1px solid transparent;
+    margin: 5px 0 5px 0;
+    padding: 6px
+}
+
+.offer:hover {
+    border: 1px solid #fff;
+}
+
+.offer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.offer h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Livros */
+
+.books {
+    border: 1px solid transparent;
+    margin: 5px 0 5px 0;
+    padding: 6px;
+}
+
+.books:hover {
+    border: 1px solid #fff;
+}
+
+.books a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.books h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Música */
+
+.music {
+    border: 1px solid transparent;
+    margin: 5px 0 5px 0;
+    padding: 6px
+}
+
+.music:hover {
+    border: 1px solid #fff;
+}
+
+.music a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.music h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Atedimento ao Client */
+
+.customer-service {
+    border: 1px solid transparent;
+    margin: 5px 0 5px 0;
+    padding: 6px;
+}
+
+.customer-service:hover {
+    border: 1px solid #fff;
+}
+
+.customer-service a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.customer-service h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Imagem prime */
+ 
+.img-prime {
+    outline: 1px solid transparent;
+    outline-offset: -2px;
+}
+
+.img-prime:hover {
+    outline: 1px solid #fff;
+    outline-offset: -2px;
+}
+

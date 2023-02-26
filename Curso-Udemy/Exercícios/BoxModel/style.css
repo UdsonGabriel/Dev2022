@@ -1,0 +1,38 @@
+/* Box Model */
+
+.conteiner {
+    display: flex;
+}
+.conteudo {
+    border: 5px solid rgb(42, 69, 143);
+    color: #fff;
+    background: #B4CA;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    text-align: center;
+    
+    
+    /* O padding eu posso usar dessa fomma, especificando os lados*/
+    /* padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px; */
+
+    /* Também posso fazer ele de forma resumida em apenas uma propriedade*/
+    /* Vale lembra que a ordem da posição é em sentido horario então a ordem vai ser (top, right, bottom, left) */
+    /* padding: 20px 15px 10px 5px; */
+
+    /* também posso aplica o mesmo valor para todos os lados */
+    padding:10px;
+
+    /* Margem também é do mesmo conceito do padding, diferente do padding que da um espaço interno, o margin da um espaçamento externo */
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px; */
+
+    /* margin: 20px 15px 10px 5px */
+
+    margin: 10px;
+}
